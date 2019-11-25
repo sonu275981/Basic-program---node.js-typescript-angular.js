@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"> </script>
+    </head>
+    <body ng-app="myapp">
+        <div ng-controller="HelloController">
+            
+            <p>how r u</p>  
+        </div>
+        
+        
+        <script>  
+angular.module("myapp", [])  
+    .controller("HelloController", function($scope) {  
+        $scope.helloTo = {};  
+        $scope.helloTo.title = "World, AngularJS";  
+    } );  
+</script>  
+        
+        
+        
+        
+        
+        
+        
+        
+    </body>
+</html>

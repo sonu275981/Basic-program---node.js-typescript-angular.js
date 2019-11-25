@@ -1,0 +1,17 @@
+<!DOCTYPE html>  
+<html>  
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>  
+<body>  
+<div ng-app="myApp" ng-controller="myCtrl"> 
+    <select>  
+<options ng-model="selectedName" ng-repeat="x for x in names"></options> 
+    </select>  
+</div>  
+<script>  
+var app = angular.module('myApp', []);  
+app.controller('myCtrl', function($scope) {  
+    $scope.names = ["Java", "PHP", ".Net", "AngularJS", "C/C++"];  
+});  
+</script>  
+</body>  
+</html>  
